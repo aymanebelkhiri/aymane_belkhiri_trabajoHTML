@@ -93,12 +93,7 @@ section {
 .galeria div:hover {
     transform: translateY(-5px);
 }
-
-.galeria img {
-    width: 100%;
-    height: 170px;
-    object-fit: cover;
-}
+ 
 
 .galeria h3 {
     padding: 10px;
