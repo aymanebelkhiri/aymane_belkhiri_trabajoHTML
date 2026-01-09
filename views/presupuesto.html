@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Presupuesto | Aymane Belkhiri</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
@@ -11,10 +11,10 @@
     <nav>
         <h1>Aymane Belkhiri</h1>
         <ul>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="../index.html">Inicio</a></li>
             <li><a href="productos.html">Portfolio</a></li>
-            <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="presupuesto.html">Presupuesto</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
         </ul>
     </nav>
 </header>
@@ -25,9 +25,15 @@
     <form action="" method="GET">
 
         <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre"
-               placeholder="Tu nombre completo"
-               required minlength="3">
+        <input 
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre completo"
+            required
+            pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{3,40}"
+            title="El nombre solo puede contener letras y espacios (3 a 40 caracteres)">
+
 
         <label for="email">Email</label>
         <input type="email" id="email" name="email"
@@ -42,7 +48,7 @@
         <label for="mensaje">Solicite más información</label>
         <textarea id="mensaje" name="mensaje"
                   placeholder="Describe tu proyecto o necesidad..."
-                  required minlength="10"></textarea> <br>
+                  required minlength="10"></textarea> 
         <label class="checkbox">
             <input type="checkbox" required>
             Acepto la <a href="#" target="_blank">política de privacidad</a>
